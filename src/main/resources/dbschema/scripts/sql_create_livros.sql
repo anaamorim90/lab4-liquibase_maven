@@ -1,0 +1,13 @@
+--liquibase formatted sql
+
+--changeset AnaAmorim:0001
+--comment: create table livro
+CREATE TABLE LIVRO (
+  ID_LIVRO INT(10) PRIMARY KEY,
+  TITULO VARCHAR(50) NOT NULL,
+  AUTOR VARCHAR(50) NOT NULL,
+  EDITOR VARCHAR(50) NOT NULL,
+  EDICAO VARCHAR(30) NOT NULL,
+  NUM_PAGINAS VARCHAR(20) NOT NULL
+);
+--rollback DROP TABLE LIVRO;
